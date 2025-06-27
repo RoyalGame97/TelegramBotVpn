@@ -13,7 +13,7 @@ bot = AsyncTeleBot(os.environ["mybot"])
 # Handle '/start' and '/help'
 @bot.message_handler(commands=['help', 'start'])
 async def send_welcome(message):
-    text = 'Hi, I am EchoBot.\nJust write me something and I will repeat it!'
+    text = 'Привет, Я твой будущий VPNbot.\nНадеюсь мы поладим и у нас не будет проблем'
     await bot.reply_to(message, text)
 
 
